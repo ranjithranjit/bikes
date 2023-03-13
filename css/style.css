@@ -1,0 +1,350 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins" , sans-serif;
+    background: linear-gradient(to right, #020202, #020000c7);
+
+}
+header{
+    top: 0px;
+    position: fixed;
+    left:5%;
+    background: #674358;
+    border-radius:5px;
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    align-items: center;
+    box-shadow: .5px .3px 40px 30px #24020deb;
+
+}
+.logo{
+    font-family: "Montserrat", sans-serif;
+    margin-left: 20px;
+    flex: 1;
+    /* cursor: pointer; */
+    /* width: fit-content; */
+    /* background: linear-gradient(to right, #49cbe9, #fff); */
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+} 
+.logo h1 a{
+    outline: none;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Rubik Iso", "Montserrat";
+}  
+nav{
+    flex: 2;
+    /* background: lightgreen; */
+}
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    /* background:  lightblue; */
+    flex: .2;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.nav-links{
+    justify-content: flex-end;
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-size: 17px;
+    /* background-color: red; */
+}
+.nav-link{
+    text-decoration: none;
+    color: #eee;
+    /* background-color: red; */
+}
+main{
+    margin: 5% 0% 0% 5%;
+    width: 90%;
+    height: 90vh;
+    background: rgba(17, 9, 11, 0.455) url("../img/apple.jpg");
+    background-size: 100% 100% ;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 42px 400px 20px #0c0101;
+    gap: 7rem;
+}
+.contents h1{
+    color: white;
+    width: 50rem;
+    margin: 90px 0px 0px 10rem;
+    font-family: "Montserrat";
+    font-size: 5rem;
+}
+main .buttons{
+    margin: 0px 0px 0px 13rem;
+    display: flex;
+    gap: 70px;
+    /* background-color: red; */
+    width: 40vh;
+    height: 5vh;
+}
+main .buttons button{
+    cursor: pointer;
+    /* border-radius: 10px; */
+    box-shadow: .4px 2px 11px 4px #0267136b;
+    height: 50px;
+    outline: none;
+    background: #673a026b;
+    border: none;
+    color: #eee;
+    width: 100px;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+main .buttons button:hover{
+    background-color: #86c2ba;
+    color: #333;
+    border: none;
+    border-radius: 24px;
+    box-shadow: .4px 2px 20px 4px #8abdc76b;
+    animation: animate-buttons .2s linear;
+}
+@keyframes animate-buttons {
+    0%{
+    box-shadow: .4px 2px 11px 4px #0267136b;
+
+    border-radius: 0px;
+    color: #eee;
+    background: #673a026b;
+
+    }
+
+    100%{
+        border-radius: 24px;
+        background-color: #20dfc5;
+        box-shadow: .4px 2px 11px 4px #8abdc76b;
+        color: #000000;
+    }
+}
+
+.fa-cart-arrow-down:hover{
+    color: white;
+}
+.nav-link:hover{
+    color: #37bab4;
+    /* font-size: 20px; */
+    animation: animate-nav-link .2s linear;
+}
+@keyframes animate-nav-link {
+    0%{
+        color: #eee;
+    }
+    100%{
+        color: #37bab4;
+    }
+    
+}
+
+footer{
+    width: 90%;
+    height: 40vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.input{
+    width: 40vw;
+    height: 10vh;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+.input-text{
+    width: 30%;
+    height: 40%;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    justify-content: center;
+    display: flex;
+    flex:3;
+    margin-left: 40px;
+}
+.submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    font-family: "Montserrat";
+    flex: 1;
+    height: 50%;
+    border-radius: 5px;
+    border: none;
+}
+.submit:hover{
+    background: #08181c;
+    color: white;
+}
+.input .name{
+    height: 40%;
+    outline: none;
+     border: none;
+     border-radius: 5px;
+     font-family: "Montserrat";
+     font-weight: bolder;
+}
+.text-denote{
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+}
+.text-denote .text{
+    font-family: "Montserrat";
+}
+.author{
+    font-family:"Montserrat";
+}
+.author a{
+    color: #eee;
+    font-size: 20px;
+    text-decoration: none;
+}
+.contactDetails{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+.number{
+    display: flex;
+    letter-spacing: 2px;
+}
+.mail{
+    display: flex;
+    letter-spacing: 2px;
+
+}
+secondPage{
+    margin: 5% 0% 0% 5%;
+    width: 90%;
+    height: 90vh;
+    background: rgba(17, 9, 11, 0.455) url("../img/apple.jpg");
+    background-size: 100% 100% ;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 42px 400px 20px #0c0101;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+
+}
+.loader{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left:0;
+
+}
+
+
+.loader .text{
+    position: relative;
+    overflow: hidden;
+    color: #eee;
+    font-family: "Crimson Pro", "Montserrat";
+    /* opacity: 0; */
+    transform: translateY("1000%");
+    font-size: 40px;
+    
+}
+
+
+secondPage h1{
+    color: white;
+    font-family: "Indie Flower";
+    font-size: 4.5rem;
+    font-weight: bolder;
+    background: linear-gradient(to right, #dee3e3, #354277f7);
+    margin: 0px 50px 0px 70px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.buttons .bb{
+    background: wheat;
+    color: #000000;
+    box-shadow: 0.4px 2px 11px 4px wheat;
+    border-radius: 4px;
+}
+
+.hand{
+    color: white;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+}
+.fa-hand-o-down{
+    animation: animate-down-arrow 1.7s linear infinite;
+}
+@keyframes animate-down-arrow {
+    50%{
+        transform: translateY(-30px);
+    }
+}
+.hand button{
+    cursor: pointer;
+    /* border-radius: 10px; */
+    box-shadow: .4px 2px 11px 4px #cccda56b;
+    height: 50px;
+    outline: none;
+    background: #673a026b;
+    border: none;
+    color: #eee;
+    width: 100px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    
+}
+.hand button:hover{
+    background-color: #86c2ba;
+    color: #333;
+    border: none;
+    border-radius: 24px;
+    box-shadow: .4px 2px 20px 4px #8abdc76b;
+    animation: animate-buttons .2s linear;
+}
+.project{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    display: flex;
+    transform: translateX(-100%);
+
+}
+/* scroll bar designing */
